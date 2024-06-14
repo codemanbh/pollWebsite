@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box; 
+}
+body {
+    background: #f4f4f4cc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 500px;
+    min-height: 580px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif ;
+}
+
+a{
+    text-decoration: none;
+}
+
+.available , .admin{
+    color:#3557a7;
+    margin-left: 9%;
+}
+
+h1{
+    color: #006caa;
+
+}
+
+.create{
+    text-align: center;
+    
+}
+
+.btn{
+    background-color: #fae587;
+    margin: 3px;
+    color: #972300;
+}
+
+
+.container {
+    width: 85% ;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.poll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background-color: #d9f8e0c9;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 5px 30px 5px 20px;
+}
+.poll:last-child{
+    margin-bottom: 0px;
+}
+.poll .question{
+    font-size: 1.4rem;
+}
+
+.no-polls{
+    color: #972300;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.button-container{
+    display: flex;
+}
+
+.button-container .button, .opt_btn {
+    display: inline-block;
+    text-align: center;
+    min-width: 95px;
+    background-color:#fae587;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color:#972300;
+    padding: 10px;
+    margin-left: 12px;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition-duration: 0.5s;
+
+}
+.opt_btns{
+    margin: 20px 10px; 
+}
+.opt_btns h3{
+    margin: 0 0 10px 20px;
+}
+
+.opt_btn{
+    min-width: 150px;
+    border: #d4c270 0.5px solid;
+    transition-duration: 0.5s;
+
+}
+
+.button:hover, .opt_btn:hover{
+    background-color: rgb(231, 211, 120);
+}
+
+.button-container .status{
+    box-shadow: 0 0 0 ;
+    background-color:rgba(0, 0, 0, 0);
+}
+
+h2.question{
+    margin-left: 25px;
+    color: #006caa;
+}
+
+.poll-option{
+    background-color: #dbf1ef;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.options label{
+    font-size: 1.15rem;
+    margin-left: 5px;
+}
+
+.ended{
+    background-color:#f8d9d9c9 ;
+}
+
+.deactivated{
+    background-color: #d3d3d3c9;
+}
+
+
+.deactivate-button,
+.activate-button {
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+.deactivate-button {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.activate-button {
+    background-color: #428bca;
+    color: #fff;
+}
+
+.report-container {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.report-button {
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #f8d7da;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-decoration: none;
+}
+.aboutus{
+    font-size: 1.2rem;
+    color: brown;
+}
+.aboutus a{
+    color: rgb(86, 148, 114);
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px){
+    
+    .container{
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .button-container{
+        flex-direction: column;
+        align-self: center;
+    }
+  
+    .button-container .button{
+        padding:10px;
+        margin: 5px;
+        transition-duration: 0.5s;
+    }
+
+    .available, .no-polls{
+        text-align: center;
+        margin-left:  0;
+        margin-right: 0;
+    }
+    .opt_btn{
+        display: block;
+        margin: 10px 20px;
+        transition-duration: 0.5s;
+
+    }
+    .createp{
+        margin: 10px auto;
+        transition-duration: 0.6s;
+    }
+}
+@media (max-width: 400px){
+    .opt_btns{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .opt_btns h3{
+        margin-left:0;
+        margin-right: 0;
+        padding-left: 0;
+    }
+    button.opt_btn{
+        min-width: 100%;
+        margin: 10px auto;
+        transition-duration: 0.6s;
+    }
+}
+
+
+
